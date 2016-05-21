@@ -1,6 +1,8 @@
 # Jekyll::GoogleCse
+[![Gem Version](https://img.shields.io/gem/v/jekyll-google_cse.svg)][ruby-gems]
 [![Build Status](https://travis-ci.org/brint/jekyll-google_cse.svg?branch=master)][travis]
 
+[ruby-gems]: https://rubygems.org/gems/jekyll-google_cse
 [travis]: https://travis-ci.org/brint/jekyll-google_cse
 
 Add [Google Custom Search Engine](https://cse.google.com/) to your Jekyll site.
