@@ -1,9 +1,13 @@
 # Jekyll::GoogleCse
 [![Gem Version](https://img.shields.io/gem/v/jekyll-google_cse.svg)][ruby-gems]
 [![Build Status](https://travis-ci.org/brint/jekyll-google_cse.svg?branch=master)][travis]
+[![Code Climate](https://codeclimate.com/github/brint/jekyll-google_cse/badges/gpa.svg)][codeclimate]
+[![Test Coverage](https://codeclimate.com/github/brint/jekyll-google_cse/badges/coverage.svg)][coverage]
 
 [ruby-gems]: https://rubygems.org/gems/jekyll-google_cse
 [travis]: https://travis-ci.org/brint/jekyll-google_cse
+[codeclimate]: https://codeclimate.com/github/brint/jekyll-google_cse
+[coverage]: https://codeclimate.com/github/brint/jekyll-google_cse/coverage
 
 Add [Google Custom Search Engine](https://cse.google.com/) to your Jekyll site.
 
