@@ -1,0 +1,9 @@
+Style/ClassAndModuleChildren:
+  Exclude:
+    - test/jekyll/google_cse_test.rb
+Style/RedundantReturn:
+  Exclude:
+    - test/jekyll/google_cse_test.rb
+Style/FileName:
+  Exclude:
+    - lib/jekyll-google_cse.rb
