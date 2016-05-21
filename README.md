@@ -1,4 +1,7 @@
 # Jekyll::GoogleCse
+[![Build Status](https://travis-ci.org/brint/jekyll-google_cse.svg?branch=master)][travis]
+
+[travis]: https://travis-ci.org/brint/jekyll-google_cse
 
 Add [Google Custom Search Engine](https://cse.google.com/) to your Jekyll site.
 
