@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    jekyll-google_cse (1.0.0)
-      jekyll (~> 3.0)
+    jekyll-google_cse (1.1.0)
+      jekyll (~> 3.9)
 
 GEM
   remote: https://rubygems.org/
