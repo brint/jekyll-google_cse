@@ -1,11 +1,13 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jekyll-google_cse/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'jekyll-google_cse'
   spec.version       = Jekyll::GoogleCse::VERSION
+  spec.required_ruby_version = '>= 2.4'
   spec.authors       = ["Brint O'Hearn"]
   spec.email         = ['brintly@gmail.com']
 
@@ -19,6 +21,10 @@ Gem::Specification.new do |spec|
   spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
+
+  spec.metadata = {
+    'rubygems_mfa_required' => 'true'
+  }
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
   # 'allowed_push_host' to allow pushing to a single host or delete this

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class Jekyll::GoogleCseTest < Minitest::Test
@@ -23,13 +25,13 @@ class Jekyll::GoogleCseTest < Minitest::Test
     bad_site = bad_site_config
     bad_tmpl = Liquid::Template.parse('{% google_cse %}')
     bad_tmpl.registers[:site] = bad_site
-    error_string = 'Liquid error: Invalid jekyll-google_cse configuration. '\
-      'See https://github.com/brint/jekyll-google_cse#usage for more details '\
-      'on usage and configuration.'
+    error_string = 'Liquid error: Invalid jekyll-google_cse configuration. ' \
+                   'See https://github.com/brint/jekyll-google_cse#usage for more details ' \
+                   'on usage and configuration.'
     assert_equal error_string, bad_tmpl.render
   end
 
-  # rubocop:disable MethodLength
+  # rubocop:disable Metrics/MethodLength
   def test_generating_google_cse_code
     site = site_config
     tmpl = Liquid::Template.parse('{% google_cse %}')
@@ -51,5 +53,5 @@ class Jekyll::GoogleCseTest < Minitest::Test
     TEMPLATE
     assert_equal expected, tmpl.render
   end
-  # rubocop:enable MethodLength
+  # rubocop:enable Metrics/MethodLength
 end

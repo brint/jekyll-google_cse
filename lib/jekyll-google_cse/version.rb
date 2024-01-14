@@ -1,4 +1,3 @@
-# Prevent bundler errors
 module Liquid; class Tag; end; end
 
 module Jekyll
