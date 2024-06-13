@@ -1,11 +1,13 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'jekyll-google_cse/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'jekyll-google_cse'
   spec.version       = Jekyll::GoogleCse::VERSION
+  spec.required_ruby_version = '>= 2.4'
   spec.authors       = ["Brint O'Hearn"]
   spec.email         = ['brintly@gmail.com']
 
@@ -20,6 +22,10 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  spec.metadata = {
+    'rubygems_mfa_required' => 'true'
+  }
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
   # 'allowed_push_host' to allow pushing to a single host or delete this
   # section to allow pushing to any host.
@@ -29,10 +35,10 @@ Gem::Specification.new do |spec|
     raise 'RubyGems 2.0 or newer is required to protect against public pushes.'
   end
 
-  spec.add_dependency 'jekyll', '~> 3.9'
+  spec.add_dependency 'jekyll', '>= 4.0'
 
-  spec.add_development_dependency 'bundler', '~> 2.2'
-  spec.add_development_dependency 'rake', '~> 13.0'
-  spec.add_development_dependency 'minitest', '~> 5.0'
-  spec.add_development_dependency 'rubocop', '~> 1.15'
+  spec.add_development_dependency 'bundler', '>= 2.2'
+  spec.add_development_dependency 'rake', '>= 13.0'
+  spec.add_development_dependency 'minitest', '>= 5.0'
+  spec.add_development_dependency 'rubocop', '>= 1.15'
 end

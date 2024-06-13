@@ -33,8 +33,8 @@ module Jekyll
         return cse_config
       end
       raise InvalidGoogleCseConfig,
-            'Invalid jekyll-google_cse configuration. See '\
-            'https://github.com/brint/jekyll-google_cse#usage for more '\
+            'Invalid jekyll-google_cse configuration. See ' \
+            'https://github.com/brint/jekyll-google_cse#usage for more ' \
             'details on usage and configuration.'
     end
   end
